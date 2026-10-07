@@ -1,0 +1,48 @@
+name: Android beta 兼容性反馈
+description: 反馈通知使用权、后台连接或自动跳过兼容问题
+title: "[兼容性] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先搜索已有 Issues，确认通知使用权是否已授权、23adskip 是否显示已连接。仅在持续/反复失联或明显延迟时排查后台设置。请不要附账号、Cookie、视频标题/BVID/CID、通知正文、私密/签名 URL 或完整观看历史。
+  - type: textarea
+    id: report
+    attributes:
+      label: 兼容性报告
+      description: 在 23adskip“关于 / 帮助”或诊断页点击“复制兼容性报告”，检查剪贴板后粘贴；不会自动上传。
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: rom
+    attributes:
+      label: ROM / 系统版本
+      placeholder: 例如 HyperOS 版本号、ColorOS 版本号、Android 版本
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: 主要现象
+      options:
+        - 通知使用权无法授权（含受限制设置）
+        - 已授权但监听器未连接
+        - 连接后反复失联
+        - 会话未就绪或无法识别单 P
+        - pagelist / BSB 查询失败
+        - 其它
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤与时间范围
+      description: 不要写入具体视频或账号；说明前台/后台、重启后、网络状态，以及是否能稳定复现。
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: 已尝试的系统设置（可选）
+      description: 请分别写通知使用权、自启动、电池/后台活动、最近任务锁定；不要统称“保活权限”。

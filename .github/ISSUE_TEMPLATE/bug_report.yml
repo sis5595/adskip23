@@ -1,0 +1,64 @@
+name: Bug 报告
+description: 报告使用 23adskip 时遇到的问题
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请先搜索已有 Issues。请勿提交账号、Cookie、完整观看历史、私密/签名 URL 或其它不必要的个人数据。截图请先遮挡个人信息。
+  - type: input
+    id: app_version
+    attributes:
+      label: 23adskip 版本
+      description: 可在“关于 / 帮助”中查看。
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 手机品牌和型号
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Android / ROM 版本
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: 问题现象
+      description: 期望发生什么，实际发生了什么？
+    validations:
+      required: true
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: 是否稳定复现
+      options:
+        - 每次都能复现
+        - 偶尔出现
+        - 只发生过一次
+        - 尚不确定
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: 兼容性报告
+      description: 在应用“关于 / 帮助”中复制，检查后粘贴；如果应用无法打开，请在此说明。
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 截图或补充说明（可选）
+      description: 上传前请遮挡账号、通知和其它个人信息。

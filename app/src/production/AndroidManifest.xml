@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <application>
+        <provider android:name=".UpdateApkProvider"
+            android:authorities="${applicationId}.updates"
+            android:exported="false" android:grantUriPermissions="true" />
+        <receiver android:name=".UndoActionReceiver" android:exported="false" />
+    </application>
+</manifest>

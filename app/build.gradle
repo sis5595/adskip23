@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'org.adskip.probe'
+    compileSdk 34
+
+    flavorDimensions += 'environment'
+
+    defaultConfig {
+        applicationId 'org.adskip.probe'
+        minSdk 26
+        targetSdk 34
+        versionCode 50
+        versionName '0.13.1-beta.2'
+    }
+
+    productFlavors {
+        production {
+            dimension 'environment'
+            applicationId 'com.sis5595.adskip23'
+            buildConfigField 'String', 'TARGET_MEDIA_PACKAGE', '"tv.danmaku.bili"'
+            buildConfigField 'boolean', 'RESEARCH_NETWORK_ENABLED', 'false'
+            buildConfigField 'boolean', 'PRODUCTION_READ_ONLY_ENABLED', 'true'
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+}

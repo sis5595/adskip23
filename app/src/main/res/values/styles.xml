@@ -1,0 +1,13 @@
+<resources>
+    <style name="AdSkipThemeLight" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#245FCB</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="AdSkipThemeDark" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#9EC2FF</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>
