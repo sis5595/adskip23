@@ -53,3 +53,7 @@ Android 把 23adskip 需要的系统能力称为“通知使用权”，它用�
 感谢 [小电视空降助手 / BilibiliSponsorBlock](https://github.com/hanydd/BilibiliSponsorBlock) 的维护者与社区标注者提供片段数据；感谢 [DontKillMyApp / Urbandroid Team](https://dontkillmyapp.com/) 整理各品牌后台限制经验，应用内相关指南按 CC BY 4.0 署名改编。
 
 完整许可、参考来源和使用边界见 [许可与致谢](NOTICE.md)。
+
+## 友情链接
+
+- [LINUX DO 社区](https://linux.do/)
